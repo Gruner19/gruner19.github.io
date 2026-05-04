@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfólio - Gruner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    spacing: {
+                        '35': '200px',
+                    },
+                    borderWidth: {
+                        '10': '10px',
+                    },
+                    borderColor: {
+                        'custom-gray': '#e4e5ea',
+                    },  
+                }
+            }
+        }
+    </script>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             background: #f4f4f4;
         }
-
-
 
         header {
             background: #333;
